@@ -1,0 +1,32 @@
+.aboutme{
+  width: 250px;
+  padding: 10px 0;
+  border-radius: 7px;
+  color: #fff;
+  text-align: center;
+  animation: changeBg 6s infinite;
+}
+@keyframes changeBg {
+ 0%   { background-color: black; }  /* hồng */
+  25%  { background-color: #7873f5; }  /* tím */
+  50%  { background-color: #42e695; }  /* xanh lá */
+  75%  { background-color: #f9ca24; }  /* vàng */
+  100% { background-color: #ff6ec4; }  /* quay về hồng */
+}
+.cardProject{
+     box-shadow: rgba(255, 215, 0, 0.25) 0px 50px 100px -20px, rgba(255, 215, 0, 0.3) 0px 30px 60px -30px;
+     border: 3px solid;
+  border-image: linear-gradient(45deg, #FFD700, #FFEA00) 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cardProject {
+    cursor: pointer;
+    border: 2px solid #00bcd4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardProject:hover {
+    transform: translateY(-8px); /* nhích lên */
+    box-shadow: 0 8px 20px #00bcd450;
+}

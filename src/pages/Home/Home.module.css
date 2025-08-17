@@ -1,0 +1,132 @@
+.section1 {
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+
+.aboutme {
+  width: 250px;
+  padding: 10px 0;
+  border-radius: 7px;
+  color: #fff;
+  text-align: center;
+  animation: changeBg 6s infinite;
+}
+
+.card1 {
+  box-shadow: rgba(255, 215, 0, 0.4) 0px 19px 38px, rgba(255, 215, 0, 0.3) 0px 15px 12px;
+}
+
+.card2 {
+  box-shadow: rgba(255, 215, 0, 0.4) 0px 19px 38px, rgba(255, 215, 0, 0.3) 0px 15px 12px;
+}
+
+.description {
+  font-size: 22px;
+  font-weight: 300;
+}
+#buttonCard {
+  display: inline-block;      /* hiển thị như nút */
+  padding: 10px 20px;   
+  margin: 43px 83px;
+  font-size: 16px;            /* cỡ chữ */
+  font-weight: 600;           /* chữ đậm hơn một chút */
+  border-radius: 12px;        /* bo tròn */
+  border: none;               /* bỏ viền */
+  background: linear-gradient(135deg, #0d6efd, #6610f2); /* gradient xanh tím */
+  color: white;               /* chữ trắng */
+  cursor: pointer;            /* hiện dấu tay */
+  transition: all 0.3s ease;  /* hiệu ứng hover */
+}
+
+#buttonCard:hover {
+  background: linear-gradient(135deg, #6610f2, #0d6efd);
+  transform: scale(1.05);     /* phóng to nhẹ */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+@keyframes changeBg {
+  0%   { background-color: black; }
+  25%  { background-color: #7873f5; }
+  50%  { background-color: #42e695; }
+  75%  { background-color: #f9ca24; }
+  100% { background-color: #ff6ec4; }
+}
+
+.cardSkills {
+  box-shadow: rgba(255, 215, 0, 0.25) 0px 50px 100px -20px, rgba(255, 215, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.cardTypeSkill {
+  font-weight: bolder;
+  background-color: #000;
+  padding: 10px 0;
+  color: #ccc !important;
+}
+
+.cardTextOtherSkill {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.titleSkill {
+  background-color: #000;
+  color: #ccc;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.education {
+  box-shadow: rgba(255, 215, 0, 0.25) 0px 50px 100px -20px, rgba(255, 215, 0, 0.3) 0px 30px 60px -30px;
+}
+.line1 {
+  position: relative;
+  top: 0;
+  width: 24em;
+  margin: 0 auto;
+  font-size: 1.8rem; /* 180% */
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-20%);
+  color: #FFD700; /* chữ vàng nổi trên card */
+  border-right: 2px solid #FFD700; /* cursor vàng */
+}
+
+/* Animation */
+.animtypewriter {
+  animation: 
+    typewriter 4s steps(44) 1s infinite normal both, /* gõ lại vô hạn */
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+.avatar:hover {
+  transform: scale(2); /* phóng to khi hover */
+  transition: transform 0.3s ease; /* hiệu ứng mượt mà */
+  cursor: zoom-in;
+  box-shadow: rgba(255, 215, 0, 0.25) 0px 50px 100px -20px, rgba(255, 215, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.avatar {
+  width: 150px;        /* tăng kích thước */
+  height: 150px;       /* tăng kích thước */
+  object-fit: cover;   /* giữ tỷ lệ hình, không bị méo */
+  border-radius: 50%;  /* bo tròn ảnh */
+  display: block;
+  border: solid 3px #FFD700; /* viền vàng */
+  margin: 10px auto 10px; /* căn giữa và tạo khoảng cách */
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  0%, 100% { border-right-color: #FFD700; }
+  50% { border-right-color: transparent; }
+}
